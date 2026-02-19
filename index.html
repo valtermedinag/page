@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo Interactivo</title>
+    <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+
+<header class="hero">
+    <h1>Bienvenido a la Experiencia</h1>
+    <p>Descubre nuestra colección exclusiva de hongos funcionales para potenciar tu bienestar.</p>
+</header>
+
+<div class="slider-wrapper" id="carousel">
+    <button class="nav-btn" onclick="move(-1)">❮</button>
+
+    <div class="slider-window">
+        <div class="slider-track" id="track">
+
+            <a href="#prod1" class="carousel-item">
+                <img src="https://images.unsplash.com/photo-1625286535466-68a6d71e4568?q=80&w=870&auto=format&fit=crop" alt="Melena de León">
+                <span>Melena de León</span>
+            </a>
+
+            <a href="#prod2" class="carousel-item">
+                <img src="https://images.unsplash.com/photo-1630623093190-166d69e55f41?q=80&w=464&auto=format&fit=crop" alt="Cordyceps">
+                <span>Cordyceps</span>
+            </a>
+
+            <a href="#prod3" class="carousel-item">
+                <img src="https://images.unsplash.com/photo-1696618086206-c32563cb3bc6?q=80&w=438&auto=format&fit=crop" alt="Chaga">
+                <span>Chaga</span>
+            </a>
+
+        </div>
+    </div>
+
+    <button class="nav-btn" onclick="move(1)">❯</button>
+</div>
+
+<section id="prod1" class="product-section">
+    <img src="https://images.unsplash.com/photo-1625286535466-68a6d71e4568?q=80&w=870&auto=format&fit=crop" alt="Melena de León">
+    <h1>Melena de León</h1>
+    <p>Conocido por apoyar la concentración, memoria y salud neuronal.</p>
+</section>
+
+<section id="prod2" class="product-section">
+    <img src="https://images.unsplash.com/photo-1630623093190-166d69e55f41?q=80&w=464&auto=format&fit=crop" alt="Cordyceps">
+    <h1>Cordyceps</h1>
+    <p>Favorece la energía física, resistencia y rendimiento deportivo.</p>
+</section>
+
+<section id="prod3" class="product-section">
+    <img src="https://images.unsplash.com/photo-1696618086206-c32563cb3bc6?q=80&w=438&auto=format&fit=crop" alt="Chaga">
+    <h1>Chaga</h1>
+    <p>Potente antioxidante natural para reforzar el sistema inmune.</p>
+</section>
+
+<footer>
+    <h3>Hongos</h3>
+    <p>© 2026 Todos los derechos reservados.</p>
+    <p>Contacto: hongo@fungi.com</p>
+</footer>
+
+<script src="assets/script.js"></script>
+</body>
+</html>
