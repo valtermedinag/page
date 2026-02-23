@@ -3,67 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catálogo Interactivo</title>
+    <title>Catálogo de Hongos Funcionales</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/styles.css">
 </head>
-<body>
+<body class="bg-light">
 
-<header class="hero">
-    <h1>Bienvenido a la Experiencia</h1>
-    <p>Descubre nuestra colección exclusiva de hongos funcionales para potenciar tu bienestar.</p>
-</header>
-
-<div class="slider-wrapper" id="carousel">
-    <button class="nav-btn" onclick="move(-1)">❮</button>
-
-    <div class="slider-window">
-        <div class="slider-track" id="track">
-
-            <a href="#prod1" class="carousel-item">
-                <img src="https://images.unsplash.com/photo-1625286535466-68a6d71e4568?q=80&w=870&auto=format&fit=crop" alt="Melena de León">
-                <span>Melena de León</span>
-            </a>
-
-            <a href="#prod2" class="carousel-item">
-                <img src="https://images.unsplash.com/photo-1630623093190-166d69e55f41?q=80&w=464&auto=format&fit=crop" alt="Cordyceps">
-                <span>Cordyceps</span>
-            </a>
-
-            <a href="#prod3" class="carousel-item">
-                <img src="https://images.unsplash.com/photo-1696618086206-c32563cb3bc6?q=80&w=438&auto=format&fit=crop" alt="Chaga">
-                <span>Chaga</span>
-            </a>
-
+    <header class="hero text-white text-center d-flex align-items-center">
+        <div class="container">
+            <h1 class="display-3 fw-bold">Bienvenido a la Experiencia</h1>
+            <p class="lead">Potencia tu bienestar con nuestra colección exclusiva.</p>
         </div>
+    </header>
+
+    <div id="fungiCarousel" class="carousel slide container my-5 shadow-lg rounded overflow-hidden" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://images.unsplash.com/photo-1625286535466-68a6d71e4568?q=80&w=870&auto=format&fit=crop" class="d-block w-100" alt="Melena de León">
+                <div class="carousel-caption bg-dark bg-opacity-50 rounded">
+                    <h5>Melena de León</h5>
+                    <a href="#prod1" class="btn btn-sm btn-outline-light mt-2">Saber más</a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://images.unsplash.com/photo-1630623093190-166d69e55f41?q=80&w=464&auto=format&fit=crop" class="d-block w-100" alt="Cordyceps">
+                <div class="carousel-caption bg-dark bg-opacity-50 rounded">
+                    <h5>Cordyceps</h5>
+                    <a href="#prod2" class="btn btn-sm btn-outline-light mt-2">Saber más</a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://images.unsplash.com/photo-1696618086206-c32563cb3bc6?q=80&w=438&auto=format&fit=crop" class="d-block w-100" alt="Chaga">
+                <div class="carousel-caption bg-dark bg-opacity-50 rounded">
+                    <h5>Chaga</h5>
+                    <a href="#prod3" class="btn btn-sm btn-outline-light mt-2">Saber más</a>
+                </div>
+            </div>
+        </div>
+        
+        <button class="carousel-control-prev" type="button" data-bs-target="#fungiCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#fungiCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
     </div>
 
-    <button class="nav-btn" onclick="move(1)">❯</button>
-</div>
+    <main class="container py-5">
+        <section id="prod1" class="row align-items-center mb-5 py-4 border-bottom">
+            <div class="col-md-6 text-center">
+                <img src="https://images.unsplash.com/photo-1625286535466-68a6d71e4568?q=80&w=870&auto=format&fit=crop" class="img-fluid rounded shadow-sm" alt="Melena de León">
+            </div>
+            <div class="col-md-6 mt-4 mt-md-0 text-center text-md-start">
+                <h2 class="display-6 fw-bold">Melena de León</h2>
+                <p class="text-secondary">Enfoque mental y salud neuronal.</p>
+            </div>
+        </section>
 
-<section id="prod1" class="product-section">
-    <img src="https://images.unsplash.com/photo-1625286535466-68a6d71e4568?q=80&w=870&auto=format&fit=crop" alt="Melena de León">
-    <h1>Melena de León</h1>
-    <p>Conocido por apoyar la concentración, memoria y salud neuronal.</p>
-</section>
+        <section id="prod2" class="row align-items-center mb-5 py-4 border-bottom flex-md-row-reverse">
+            <div class="col-md-6 text-center">
+                <img src="https://images.unsplash.com/photo-1630623093190-166d69e55f41?q=80&w=464&auto=format&fit=crop" class="img-fluid rounded shadow-sm" alt="Cordyceps">
+            </div>
+            <div class="col-md-6 mt-4 mt-md-0 text-center text-md-start">
+                <h2 class="display-6 fw-bold">Cordyceps</h2>
+                <p class="text-secondary">Energía celular y rendimiento físico.</p>
+            </div>
+        </section>
 
-<section id="prod2" class="product-section">
-    <img src="https://images.unsplash.com/photo-1630623093190-166d69e55f41?q=80&w=464&auto=format&fit=crop" alt="Cordyceps">
-    <h1>Cordyceps</h1>
-    <p>Favorece la energía física, resistencia y rendimiento deportivo.</p>
-</section>
+        <section id="prod3" class="row align-items-center mb-5 py-4">
+            <div class="col-md-6 text-center">
+                <img src="https://images.unsplash.com/photo-1696618086206-c32563cb3bc6?q=80&w=438&auto=format&fit=crop" class="img-fluid rounded shadow-sm" alt="Chaga">
+            </div>
+            <div class="col-md-6 mt-4 mt-md-0 text-center text-md-start">
+                <h2 class="display-6 fw-bold">Chaga</h2>
+                <p class="text-secondary">Inmunidad y protección antioxidante.</p>
+            </div>
+        </section>
+    </main>
 
-<section id="prod3" class="product-section">
-    <img src="https://images.unsplash.com/photo-1696618086206-c32563cb3bc6?q=80&w=438&auto=format&fit=crop" alt="Chaga">
-    <h1>Chaga</h1>
-    <p>Potente antioxidante natural para reforzar el sistema inmune.</p>
-</section>
+    <footer class="bg-dark text-white py-4 text-center mt-5">
+        <div class="container">
+            <h4 class="fw-bold mb-3">Hongos Funcionales</h4>
+            <p class="mb-1">© 2026 Todos los derechos reservados.</p>
+            <p class="small text-secondary">Contacto: hongo@fungi.com</p>
+        </div>
+    </footer>
 
-<footer>
-    <h3>Hongos</h3>
-    <p>© 2026 Todos los derechos reservados.</p>
-    <p>Contacto: hongo@fungi.com</p>
-</footer>
-
-<script src="assets/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/script.js"></script>
 </body>
 </html>
