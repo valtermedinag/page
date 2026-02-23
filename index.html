@@ -3,93 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catálogo de Hongos Funcionales</title>
+    <title>Fungi Store - Bienestar Natural</title>
+    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/dist/css/all.min.css">
+    
     <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body class="bg-light">
 
-    <header class="hero text-white text-center d-flex align-items-center">
+    <header class="bg-dark text-white text-center py-5 mb-4">
         <div class="container">
-            <h1 class="display-3 fw-bold">Bienvenido a la Experiencia</h1>
-            <p class="lead">Potencia tu bienestar con nuestra colección exclusiva.</p>
+            <h1 class="display-4 fw-500">Bienvenido a la Experiencia</h1>
+            <p class="lead fw-300 text-muted">Descubre nuestra colección exclusiva de hongos funcionales.</p>
         </div>
     </header>
 
-    <div id="fungiCarousel" class="carousel slide container my-5 shadow-lg rounded overflow-hidden" data-bs-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="https://images.unsplash.com/photo-1625286535466-68a6d71e4568?q=80&w=870&auto=format&fit=crop" class="d-block w-100" alt="Melena de León">
-                <div class="carousel-caption bg-dark bg-opacity-50 rounded">
-                    <h5>Melena de León</h5>
-                    <a href="#prod1" class="btn btn-sm btn-outline-light mt-2">Saber más</a>
+    <section class="container my-5">
+        <h2 class="text-center mb-5 fw-500">Nuestros Productos</h2>
+        <div class="row g-4">
+            
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="https://images.unsplash.com/photo-1625286535466-68a6d71e4568?q=80&w=870&auto=format&fit=crop" class="card-img-top" alt="Melena de León">
+                    <div class="card-body">
+                        <h5 class="card-title fw-500">Melena de León</h5>
+                        <p class="card-text text-secondary fw-300">Apoyo para la concentración, memoria y salud neuronal de forma natural.</p>
+                        <p class="text-success fw-bold h5 mb-3">$18.990</p>
+                        <hr>
+                        <p class="card-text small text-muted">
+                            <i class="fas fa-map-marker-alt me-1"></i> Origen: Bosques Valdivianos
+                        </p>
+                    </div>
                 </div>
             </div>
-            <div class="carousel-item">
-                <img src="https://images.unsplash.com/photo-1630623093190-166d69e55f41?q=80&w=464&auto=format&fit=crop" class="d-block w-100" alt="Cordyceps">
-                <div class="carousel-caption bg-dark bg-opacity-50 rounded">
-                    <h5>Cordyceps</h5>
-                    <a href="#prod2" class="btn btn-sm btn-outline-light mt-2">Saber más</a>
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="https://images.unsplash.com/photo-1630623093190-166d69e55f41?q=80&w=464&auto=format&fit=crop" class="card-img-top" alt="Cordyceps">
+                    <div class="card-body">
+                        <h5 class="card-title fw-500">Cordyceps</h5>
+                        <p class="card-text text-secondary fw-300">Favorece la energía física y el rendimiento deportivo superior.</p>
+                        <p class="text-success fw-bold h5 mb-3">$21.500</p>
+                        <hr>
+                        <p class="card-text small text-muted">
+                            <i class="fas fa-map-marker-alt me-1"></i> Origen: Cordillera de los Andes
+                        </p>
+                    </div>
                 </div>
             </div>
-            <div class="carousel-item">
-                <img src="https://images.unsplash.com/photo-1696618086206-c32563cb3bc6?q=80&w=438&auto=format&fit=crop" class="d-block w-100" alt="Chaga">
-                <div class="carousel-caption bg-dark bg-opacity-50 rounded">
-                    <h5>Chaga</h5>
-                    <a href="#prod3" class="btn btn-sm btn-outline-light mt-2">Saber más</a>
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="https://images.unsplash.com/photo-1696618086206-c32563cb3bc6?q=80&w=438&auto=format&fit=crop" class="card-img-top" alt="Chaga">
+                    <div class="card-body">
+                        <h5 class="card-title fw-500">Chaga</h5>
+                        <p class="card-text text-secondary fw-300">Potente antioxidante natural para reforzar tu sistema inmune.</p>
+                        <p class="text-success fw-bold h5 mb-3">$19.990</p>
+                        <hr>
+                        <p class="card-text small text-muted">
+                            <i class="fas fa-map-marker-alt me-1"></i> Origen: Sur de Chile
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="bg-white py-5 border-top">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-8 col-lg-6">
+                    <h2 class="text-center mb-4 fw-500">Suscríbete para Novedades</h2>
+                    <form class="p-4 border rounded bg-light shadow-sm">
+                        <div class="mb-3">
+                            <label for="name" class="form-label fw-500">Nombre Completo</label>
+                            <input type="text" class="form-control" id="name" placeholder="Ej: Juan Pérez">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label fw-500">Correo Electrónico</label>
+                            <input type="email" class="form-control" id="email" placeholder="nombre@ejemplo.com">
+                        </div>
+                        <button type="submit" class="btn btn-success w-100 py-2">Enviar Información</button>
+                    </form>
                 </div>
             </div>
         </div>
-        
-        <button class="carousel-control-prev" type="button" data-bs-target="#fungiCarousel" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon"></span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#fungiCarousel" data-bs-slide="next">
-            <span class="carousel-control-next-icon"></span>
-        </button>
-    </div>
+    </section>
 
-    <main class="container py-5">
-        <section id="prod1" class="row align-items-center mb-5 py-4 border-bottom">
-            <div class="col-md-6 text-center">
-                <img src="https://images.unsplash.com/photo-1625286535466-68a6d71e4568?q=80&w=870&auto=format&fit=crop" class="img-fluid rounded shadow-sm" alt="Melena de León">
-            </div>
-            <div class="col-md-6 mt-4 mt-md-0 text-center text-md-start">
-                <h2 class="display-6 fw-bold">Melena de León</h2>
-                <p class="text-secondary">Enfoque mental y salud neuronal.</p>
-            </div>
-        </section>
-
-        <section id="prod2" class="row align-items-center mb-5 py-4 border-bottom flex-md-row-reverse">
-            <div class="col-md-6 text-center">
-                <img src="https://images.unsplash.com/photo-1630623093190-166d69e55f41?q=80&w=464&auto=format&fit=crop" class="img-fluid rounded shadow-sm" alt="Cordyceps">
-            </div>
-            <div class="col-md-6 mt-4 mt-md-0 text-center text-md-start">
-                <h2 class="display-6 fw-bold">Cordyceps</h2>
-                <p class="text-secondary">Energía celular y rendimiento físico.</p>
-            </div>
-        </section>
-
-        <section id="prod3" class="row align-items-center mb-5 py-4">
-            <div class="col-md-6 text-center">
-                <img src="https://images.unsplash.com/photo-1696618086206-c32563cb3bc6?q=80&w=438&auto=format&fit=crop" class="img-fluid rounded shadow-sm" alt="Chaga">
-            </div>
-            <div class="col-md-6 mt-4 mt-md-0 text-center text-md-start">
-                <h2 class="display-6 fw-bold">Chaga</h2>
-                <p class="text-secondary">Inmunidad y protección antioxidante.</p>
-            </div>
-        </section>
-    </main>
-
-    <footer class="bg-dark text-white py-4 text-center mt-5">
-        <div class="container">
-            <h4 class="fw-bold mb-3">Hongos Funcionales</h4>
-            <p class="mb-1">© 2026 Todos los derechos reservados.</p>
-            <p class="small text-secondary">Contacto: hongo@fungi.com</p>
+    <footer class="bg-dark text-white py-4 mt-auto">
+        <div class="container text-center">
+            <h3 class="fw-500 mb-2">Hongos</h3>
+            <p class="text-muted small mb-0">© 2026 Todos los derechos reservados.</p>
         </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/script.js"></script>
 </body>
 </html>

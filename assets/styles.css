@@ -1,29 +1,32 @@
-/* Configuración Global */
-html {
-    scroll-behavior: smooth;
+/* Configuración de Tipografía solicitada */
+body {
+    font-family: 'Roboto', sans-serif;
 }
 
-/* Hero Section */
-.hero {
-    height: 60vh;
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
-                url('https://images.unsplash.com/photo-1511447333015-45b65e60f6d5?q=80&w=2000') center/cover;
+.fw-300 { font-weight: 300; }
+.fw-500 { font-weight: 500; }
+
+/* Colores Base Personalizados (si no se cubren con utilitarias) */
+.text-custom-gray {
+    color: #707070;
 }
 
-/* Carrusel */
-.carousel-item img {
-    height: 500px;
+/* Ajustes de Imagen en Cards */
+.card-img-top {
+    height: 200px;
     object-fit: cover;
 }
 
-/* Clase para ocultar suavemente (opcional si prefieres d-none) */
-.hidden-carousel {
-    opacity: 0;
-    pointer-events: none;
-    transform: translateY(-20px);
-    transition: all 0.5s ease;
+/* Efecto hover suave para las cards */
+.card {
+    transition: transform 0.3s ease;
 }
 
-#fungiCarousel {
-    transition: all 0.5s ease;
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Ajuste para el Hero */
+header {
+    background-color: #212529 !important; /* Color solicitado */
 }
